@@ -1,0 +1,168 @@
+:root {
+    --primary-color: #FBB24C;
+    --max-width: 1200px;
+    --max-height: 1081px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-style: italic;
+    color: #fff;
+    background: url("../img/cover.jpg") no-repeat center center/cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Utility class */
+#gradient{
+    padding-top: 10px;
+    width: 100%;
+    height:100vh;
+    z-index: -2;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 1), rgba(26, 26, 26, 0));
+
+}
+
+svg {
+    z-index: -1;
+}
+
+svg line {
+    opacity: .3;
+}
+
+.container {
+    max-width: 95%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.q-heading {
+    font-size: 2rem;
+}
+
+.game {
+    font-size: 3rem;
+}
+
+svg {
+    position: absolute;
+}
+
+
+/* Main nav */
+#main-nav {
+    margin-top: 2rem;
+}
+
+#main-nav .logo {
+    width: 50px;
+}
+
+#main-nav .logo:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+#main-nav .nav-container {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+
+#main-nav .nav-container > div:last-child {
+    justify-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-nav .nav-container > div:last-child:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+#main-nav .nav-container > div:last-child h4 {
+    margin-right: .75rem;
+}
+
+/* Main section */
+#main-section {
+    height: 70vh;
+    position: relative;
+}
+#main-section .section-container {  
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: inherit;
+    height: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+#main-section .section-container .quote {
+    align-items: center;
+    justify-content: center;
+}
+
+#main-section .section-container .quote .line {
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+    width: 60px;
+    height: 5px;
+    background: var(--primary-color);
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+#main-section .section-container .page-no {
+    justify-self: end;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+/* name section*/
+#name-section .name-container .name {
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: .4rem;
+}
+
+#name-section .name-container a {
+    justify-self: end;
+    font-size: .8rem;   
+}
+
+#name-section .name-container a:hover {
+    opacity: 0.7;
+}
+
+@media(max-width: 800px) {
+    svg {
+        visibility: hidden;
+    }
+}
+
+
