@@ -163,6 +163,10 @@ svg {
     svg {
         visibility: hidden;
     }
+
+    .q-heading {
+        font-size: 1rem;
+    }
 }
 
 
